@@ -2,13 +2,24 @@ spring:
   application:
     name: paymate
 
+  # Add this block ↓
+  security:
+    user:
+      name: disabled
+      password: disabled
+
   datasource:
     url: jdbc:postgresql://localhost:5432/paymate
-    username: paymate_user
-    password: paymate_pass
+    username: ${DB_USERNAME:paymate_user}
+    password: ${DB_PASSWORD:paymate_pass}
     driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 2
+      connection-timeout: 30000
 
   jpa:
+    open-in-view: false
     hibernate:
       ddl-auto: validate
     show-sql: false
@@ -17,5 +28,14 @@ spring:
         format_sql: true
         dialect: org.hibernate.dialect.PostgreSQLDialect
 
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+    baseline-on-migrate: true
+
 server:
   port: 8080
+
+app:
+  name: PayMate
+  version: 1.0.0
