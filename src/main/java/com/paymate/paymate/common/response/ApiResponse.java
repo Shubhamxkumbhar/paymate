@@ -20,7 +20,7 @@ import java.time.Instant;
  * </pre>
  *
  * @param <T> the type of the data payload
- * @author PayMate Engineering
+ * @author Shubham Kumbhar
  */
 @Getter
 @Builder

@@ -18,7 +18,7 @@ import lombok.Getter;
  * }
  * </pre>
  *
- * @author PayMate Engineering
+ * @author Shubham Kumbhar
  */
 @Getter
 @Builder

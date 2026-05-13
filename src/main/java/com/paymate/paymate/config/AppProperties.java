@@ -19,7 +19,7 @@ import org.springframework.stereotype.Component;
  *   version: 1.0.0
  * </pre>
  *
- * @author PayMate Engineering
+ * @author Shubham Kumbhar
  */
 @Getter
 @Setter

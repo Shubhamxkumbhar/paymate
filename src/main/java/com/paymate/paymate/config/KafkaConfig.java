@@ -4,7 +4,7 @@ package com.paymate.paymate.config;
  * Kafka configuration for PayMate event streaming.
  * Configured in Sprint 5 when Kafka is introduced.
  *
- * @author PayMate Engineering
+ * @author Shubham Kumbhar
  */
 // TODO: Sprint 5 — configure Kafka producer and consumer beans
 public class KafkaConfig {

@@ -26,7 +26,7 @@ spring:
     properties:
       hibernate:
         format_sql: true
-        dialect: org.hibernate.dialect.PostgreSQLDialect
+
 
   flyway:
     enabled: true
@@ -36,6 +36,16 @@ spring:
 server:
   port: 8080
 
+# ── Application metadata ──────────────────────────────────────────
 app:
   name: PayMate
   version: 1.0.0
+
+# ── JWT configuration ─────────────────────────────────────────────
+# secret: must be at least 32 characters, kept in .env in production
+# access-token-expiry: 15 minutes in milliseconds (15 * 60 * 1000)
+# refresh-token-expiry: 30 days in milliseconds (30 * 24 * 60 * 60 * 1000)
+jwt:
+  secret: ${JWT_SECRET:mySecretKeyForDevelopmentOnlyMinimum32Chars!}
+  access-token-expiry: 900000
+  refresh-token-expiry: 2592000000

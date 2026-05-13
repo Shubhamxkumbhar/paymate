@@ -1,6 +1,7 @@
 package com.paymate.paymate;
 
 import com.paymate.paymate.config.AppProperties;
+import com.paymate.paymate.config.JwtProperties;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration;
@@ -20,7 +21,7 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
  * @author PayMate Engineering
  */
 @SpringBootApplication(exclude = {UserDetailsServiceAutoConfiguration.class})
-@EnableConfigurationProperties(AppProperties.class)
+@EnableConfigurationProperties({AppProperties.class, JwtProperties.class})
 public class PaymateApplication {
 
 	/**

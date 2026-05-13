@@ -27,7 +27,7 @@ import java.util.stream.Collectors;
  *   <li>{@link Exception} — unexpected errors, always returns 500</li>
  * </ol>
  *
- * @author PayMate Engineering
+ * @author Shubham Kumbhar
  */
 @Slf4j
 @RestControllerAdvice

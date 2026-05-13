@@ -13,7 +13,7 @@ import org.springframework.http.HttpStatus;
  * <p>Never throw this class directly — always use a specific subclass
  * that clearly names the error condition (e.g. {@code InsufficientFundsException}).</p>
  *
- * @author PayMate Engineering
+ * @author Shubham Kumbhar
  */
 @Getter
 public class PayMateException extends RuntimeException {

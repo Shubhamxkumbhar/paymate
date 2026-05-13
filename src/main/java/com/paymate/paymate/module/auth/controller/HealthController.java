@@ -23,7 +23,7 @@ import java.util.Map;
  * <p>This endpoint is intentionally unauthenticated — monitoring tools
  * must be able to reach it without credentials.</p>
  *
- * @author PayMate Engineering
+ * @author Shubham Kumbhar
  */
 @Slf4j
 @RestController
